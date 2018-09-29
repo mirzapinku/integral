@@ -37,8 +37,8 @@ def get_rounded_n_to_nearest_100(n):
     reminder = n % 100
     res = int(n / 100)
 
-    if res == 0 and reminder < 50:
-        res += 1
+    # if res == 0 and reminder < 50:
+    #    res += 1
 
     if reminder < 50:
         return res * 100
