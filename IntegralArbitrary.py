@@ -26,7 +26,7 @@ def definite_integral(lower, upper):
 """
 get_rounded_n_to_nearest_100(n)
 This method will round n to nearest 100.
-If n = 25, return 100
+If n = 25, return 0
 If n = 55, return 100
 If n = 125, return 100
 If n = 155, return 200
