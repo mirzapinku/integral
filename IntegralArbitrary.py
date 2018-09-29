@@ -77,6 +77,7 @@ no_of_poly = int(input('Enter number of Polygons for approximate area: '))
 approx_area = trapezoid_integral(lower_bound, upper_bound, no_of_poly)
 definite_area = definite_integral(lower_bound, upper_bound)
 
+print("======================< OUTPUT SUMMARY >========================")
 print("The APPROXIMATE area of the circle is %f" % approx_area)
 print("The DEFINITE area of the circle is %f" % definite_area)
 print("ERROR is %f" % (approx_area - definite_area))
@@ -85,6 +86,7 @@ while abs(approx_area - definite_area) > error_limit:
     no_of_poly += 1
     approx_area = trapezoid_integral(lower_bound, upper_bound, no_of_poly)
 
-print(no_of_poly)
-print("Number of polygons that gives an error less than 1e-5 is %d" % get_rounded_n_to_nearest_100(no_of_poly))
+print("Number of polygons that gives an error less than 1e-5 is %d" % no_of_poly)
+print("And rounded to nearest hundred is %d" % get_rounded_n_to_nearest_100(no_of_poly))
 # print("New ERROR is %f" % (approx_area - definite_area))
+print("======================<<<<<<<<<>>>>>>>>>========================")
